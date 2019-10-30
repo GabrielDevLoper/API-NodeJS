@@ -2,6 +2,8 @@
     max-width: 700px;
     margin: 20px auto 0;
     padding: 0 20px;
+    
+    
 }
 
 .product-list article{
@@ -10,11 +12,17 @@
     border-radius: 5px;
     padding: 20px;
     margin-bottom: 20px;
+    background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    border-color: black;
+    color: white;
 }
 
 .product-list article p{
     font-size: 16px;
-    color: #999;
+    color: rgb(185, 177, 177);
     margin-top: 5px;
     line-height: 24px;
 }
@@ -40,4 +48,35 @@
     background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #4A00E0, #8E2DE2);
     color: white;
+}
+
+.product-list .actions{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.product-list .actions button{
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A00E0, #8E2DE2);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.product-list .actions button[disabled]{
+    opacity: 0.5;
+    cursor: default;
+}
+
+.product-list .actions button:hover{
+    opacity: 0.7;
+}
+.product-list .actions button[disabled]:hover{
+    opacity: 0.5;
 }
